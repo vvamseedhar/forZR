@@ -12,9 +12,12 @@
 		<script type="text/javascript" src="js/jqplot.barRenderer.min.js"></script>				
 	</head>
 	<body>
+            <?php include("getData.php");?>
+            <?php echo $data;?>
 		<script type="text/javascript"> 
 			$(document).ready(function(){
-				var line2 = [['rajendra',15],['madhu',20],['mohan',25]];
+				//var line2 = [['rajendra',15],['madhu',20],['mohan',25],['mohagn',5]];
+				var line2 = <?php echo $data; ?>;
 	            var plot2 = $.jqplot('chart4', [line2], {
 					    series:[{renderer:$.jqplot.BarRenderer}],
 					    axes: {
