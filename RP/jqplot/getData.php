@@ -1,7 +1,7 @@
 <?php
 	
 	$connect = mysql_connect('localhost','root','');
-	$select = mysql_select_db('zingreelbeta-cake',$connect);
+	$select = mysql_select_db('checking',$connect);
     $sql = mysql_query("SELECT name,address FROM graph");
     $count = mysql_num_rows($sql);
     $i = 1;
