@@ -2,8 +2,7 @@
 	
 	$connect = mysql_connect('localhost','root','');
 	$select = mysql_select_db('zingreelbeta-cake',$connect);
-    $sql = mysql_query("SELECT name,address 
-                                          FROM graph");
+    $sql = mysql_query("SELECT name,address FROM graph");
     $count = mysql_num_rows($sql);
     $i = 1;
   	$dataset1 = "[";
