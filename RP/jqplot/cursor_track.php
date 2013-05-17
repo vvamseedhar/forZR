@@ -29,7 +29,7 @@
 				          angle: 30
 				        }
 				    },
-				    axes: {
+				    axes: 	{
 				      xaxis: {
 				        renderer: $.jqplot.CategoryAxisRenderer
 				      }
@@ -37,7 +37,11 @@
 					highlighter: {
 				        show: true,
 				        sizeAdjust: 7.5
-			      	}
+			      	},
+			      	cursor: {
+			        	show: true,
+     					tooltipLocation:'sw'
+			     	}
 				  });
 			});
 		</script>
